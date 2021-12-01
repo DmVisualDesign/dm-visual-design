@@ -143,6 +143,7 @@ const swiper = new Swiper('.swiper', {
   //Autoplay
   autoplay: {
     delay: 5000,
+    disableOnInteraction: false
   },
   centeredSlides:true,
   // Navigation arrows
