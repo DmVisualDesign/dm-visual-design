@@ -18,7 +18,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("../img/fondo-muestra.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -177,6 +177,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar li {
   position: relative;
+  background: pink;
+padding: 5px 10px;
+border-radius: 5px;
 }
 .navbar li + li {
   margin-left: 30px;
@@ -189,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
+  color: #945B3E;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -205,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: #945B3E;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -541,7 +544,76 @@ section .container {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.resume .resume-title {
+
+.courses .icon-box {
+  text-align: center;
+  background: rgba(204, 204, 204, 0.1);
+  padding-top: 38%;
+  transition: all ease-in-out 0.3s;
+  width: 100%;
+height: 100%;
+}
+
+.courses .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #18d26e;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+.courses .icon-box .icon i {
+  color: #fff;
+  font-size: 28px;
+}
+.courses .icon-box .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+.courses .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.courses .icon-box h4 a {
+  color: #fff;
+}
+.courses .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.courses .icon-box:hover {
+  background: #18d26e;
+  border-color: #18d26e;
+}
+.courses .icon-box:hover .icon {
+  background: #fff;
+}
+.courses .icon-box:hover .icon i {
+  color: #18d26e;
+}
+.courses .icon-box:hover .icon::before {
+  background: #35e888;
+}
+.courses .icon-box:hover h4 a, .services .icon-box:hover p {
+  color: #fff;
+}
+
+/* .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
@@ -590,16 +662,20 @@ section .container {
   top: 0;
   background: #18d26e;
   border: 2px solid #18d26e;
-}
+} */
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.swiper-slide img{
+  width: 500px;
+  height: 500px;
+}
 
 /* .row div a{
   width: 100%;
 } */
-.vidrieras, .visual-merch{
+.vidrieras, .visual-merch, .asesoria-integral, .asesoria-hora, .diseño-tienda{
   display: flex;
   background-size: cover;
   background-position-y: 40%;
@@ -615,7 +691,7 @@ section .container {
   background-image: url("/assets/img/servicios/visual-merch.jpeg");
 
 }
-/* .services .portfolio-item {
+/* {.services .portfolio-item {
   margin-bottom: 30px;
 }
 .services #portfolio-flters {
@@ -749,7 +825,7 @@ section .container {
 .services .portfolio-wrap:hover .portfolio-info::after {
   bottom: 15px;
   right: 15px;
-} */
+}} */
 
 .services .icon-box {
   text-align: center;
@@ -823,8 +899,13 @@ height: 100%;
 .gprev.gbtn.disabled, .gnext.gbtn.disabled{
   display: none;
 }
-.vidriera-details {
-  padding-top: 40px;
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+}
+
+.services-details {
+  padding-top: 0px;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
   left: 0;
@@ -833,51 +914,51 @@ height: 100%;
   bottom: 0;
   overflow-y: auto;
 }
-.vidriera-details .container {
+.services-details .container {
   padding-top: 20px;
   padding-bottom: 40px;
 }
-.vidriera-details .portfolio-title {
+.services-details .portfolio-title {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.vidriera-details .portfolio-info {
+.services-details .portfolio-info {
   padding-top: 45px;
 }
-.vidriera-details .portfolio-info h3 {
+.services-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px;
 }
-.vidriera-details .portfolio-info ul {
+.services-details .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
-.vidriera-details .portfolio-info ul li + li {
+.services-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
-.vidriera-details .portfolio-info p {
+.services-details .portfolio-info p {
   font-size: 15px;
   padding: 15px 0 0 0;
 }
 @media (max-width: 992px) {
-  .vidriera-details .portfolio-info {
+  .services-details .portfolio-info {
     padding-top: 20px;
   }
 }
-.vidriera-details .swiper-pagination {
+.services-details .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
-.vidriera-details .swiper-pagination .swiper-pagination-bullet {
+.services-details .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.3);
 }
-.vidriera-details .swiper-pagination .swiper-pagination-bullet-active {
+.services-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #18d26e;
 }
 
