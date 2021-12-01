@@ -136,6 +136,30 @@
       }
     }
   });
+//Swiper
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  loop: true,
+  //Autoplay
+  autoplay: {
+    delay: 5000,
+  },
+  centeredSlides:true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+// If we need pagination
+pagination: {
+  el: '.swiper-pagination',
+  clickable: true
+}
+
+});
+
+
+
 
   /**
    * Skills animation
@@ -230,18 +254,18 @@
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  // new Swiper('.portfolio-details-slider', {
+  //   speed: 400,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false
+  //   },
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true
+  //   }
+  // });
 
 })()

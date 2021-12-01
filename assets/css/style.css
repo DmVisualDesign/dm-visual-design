@@ -675,7 +675,7 @@ height: 100%;
 /* .row div a{
   width: 100%;
 } */
-.vidrieras, .visual-merch, .asesoria-integral, .asesoria-hora, .diseño-tienda{
+.card{
   display: flex;
   background-size: cover;
   background-position-y: 40%;
@@ -689,7 +689,12 @@ height: 100%;
 }
 .visual-merch{
   background-image: url("/assets/img/servicios/visual-merch.jpeg");
-
+}
+.tienda-exito{
+  background-image: url("/assets/img/cursos/tienda-exito.png");
+}
+.vidrieras-qVenden{
+  background-image: url("/assets/img/cursos/vidrieras-venden.jpeg");
 }
 /* {.services .portfolio-item {
   margin-bottom: 30px;
