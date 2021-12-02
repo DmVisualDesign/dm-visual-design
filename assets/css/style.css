@@ -691,16 +691,16 @@ padding-top: 85%;
 overflow: hidden;
 }
 .vidrieras{
-  background-image: url("assets/img/servicios/vidrieras.jpeg");
+  background-image: url("../img/servicios/vidrieras.jpeg");
 }
 .visual-merch{
-  background-image: url("assets/img/servicios/visual-merch.jpeg");
+  background-image: url("../img/servicios/visual-merch.jpeg");
 }
 .tienda-exito{
-  background-image: url("assets/img/cursos/tienda-exito.png");
+  background-image: url("../img/cursos/tienda-exito.png");
 }
 .vidrieras-qVenden{
-  background-image: url("assets/img/cursos/vidrieras-venden.jpeg");
+  background-image: url("../img/cursos/vidrieras-venden.jpeg");
 }
 /* {.services .portfolio-item {
   margin-bottom: 30px;
