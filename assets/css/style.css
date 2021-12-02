@@ -689,6 +689,7 @@ padding-top: 85%;
   margin-bottom: 20px;
   border-radius: 30px;
 overflow: hidden;
+border: solid 2px aliceblue;
 }
 .vidrieras{
   background-image: url("../img/servicios/vidrieras.jpeg");
