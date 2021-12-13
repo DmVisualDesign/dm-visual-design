@@ -5,6 +5,7 @@
 :root{
   --primario: #945B3E;
   --negro: #2E2E2E;
+  --blanco: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -304,8 +305,9 @@ section.section-show {
   padding-bottom: 45px;
 }
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--blanco);
   padding: 30px;
+  border-radius: 50px;
 }
 @media (max-width: 768px) {
   section {
