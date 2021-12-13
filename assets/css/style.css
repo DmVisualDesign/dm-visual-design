@@ -1,15 +1,14 @@
-/**
-* Template Name: Personal - v4.7.0
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root{
+  --primario: #945B3E;
+  --negro: #2E2E2E;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Prata", serif;
   background-color: #040404;
   color: #fff;
   position: relative;
@@ -317,7 +316,7 @@ section .container {
   }
 }
 
-.section-title h2 {
+/* .section-title h2 {
   font-size: 14px;
   font-weight: 500;
   padding: 0;
@@ -326,7 +325,6 @@ section .container {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
 }
 .section-title h2::after {
   content: "";
@@ -335,15 +333,12 @@ section .container {
   display: inline-block;
   background: #4ceb95;
   margin: 4px 10px;
-}
+} */
 .section-title p {
   margin: 0;
-  margin: -15px 0 15px 0;
-  font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
+  margin: -15px 0 0px 0;
+  font-size: 96px;
+  color: var(--primario);
 }
 
 /*--------------------------------------------------------------
