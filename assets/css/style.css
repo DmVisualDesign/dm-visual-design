@@ -582,13 +582,7 @@ padding-top: 85%;
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
 }
-.courses .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
-  padding: 9px 0;
-  background-color: pink;
-}
+
 .courses .icon-box h4 a {
   color: #fff;
 }
@@ -614,57 +608,6 @@ padding-top: 85%;
   color: #fff;
 }
 
-/* .resume .resume-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
-  position: relative;
-}
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #18d26e;
-  margin-bottom: 10px;
-}
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: rgba(255, 255, 255, 0.15);
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #18d26e;
-  border: 2px solid #18d26e;
-} */
-
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -681,8 +624,8 @@ padding-top: 85%;
   background-size: cover;
   background-position-y: 100%;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 300px;
+  width: 296px;
+  height: 335px;
   margin-bottom: 20px;
   border-radius: 30px;
 overflow: hidden;
@@ -700,141 +643,6 @@ border: solid 2px aliceblue;
 .vidrieras-qVenden{
   background-image: url("../img/cursos/vidrieras-venden.jpeg");
 }
-/* {.services .portfolio-item {
-  margin-bottom: 30px;
-}
-.services #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 15px auto;
-  list-style: none;
-  text-align: center;
-  border-radius: 50px;
-  padding: 2px 15px;
-}
-.services #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 16px 10px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1);
-  margin: 0 3px 10px 3px;
-  transition: all 0.3s ease-in-out;
-  border-radius: 4px;
-}
-.services #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
-}
-.services #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-.services .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.6);
-}
-.services .portfolio-wrap::before {
-  content: "";
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-.services .portfolio-wrap .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.services .portfolio-wrap .portfolio-info::before {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  border-top: 3px solid #fff;
-  border-left: 3px solid #fff;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-.services .portfolio-wrap .portfolio-info::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid #fff;
-  border-right: 3px solid #fff;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-.services div div h4 {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 600;
-}
-.services .portfolio-wrap .portfolio-info p {
-  color: #ffffff;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-}
-.services .portfolio-wrap .portfolio-links {
-  text-align: center;
-  z-index: 4;
-}
-.services .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  margin: 0 2px;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-.services .portfolio-wrap .portfolio-links a:hover {
-  color: #63eda3;
-}
-.services .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
-.services .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
-}
-.services .portfolio-wrap:hover .portfolio-info::before {
-  top: 15px;
-  left: 15px;
-}
-.services .portfolio-wrap:hover .portfolio-info::after {
-  bottom: 15px;
-  right: 15px;
-}} */
 
 .services .icon-box {
   text-align: center;
@@ -875,14 +683,27 @@ height: 100%;
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
 }
-.services .icon-box h4 {
+.services .icon-box .titulo-card, .courses .icon-box .titulo-card  {
   font-weight: 700;
-  /* margin-bottom: 15px; */
-  font-size: 24px;
+  margin-top: 0px;
+  text-align: left;
+  text-indent: 20px;
   padding: 9px 0;
+  height: 85px;
   background-color: pink;
 }
-.services .icon-box h4 a {
+.services .icon-box .titulo-card h4, .courses .icon-box .titulo-card h4 {
+
+  font-size: 20px;
+  margin: 10px 0 0;
+
+}
+.services .icon-box .titulo-card p, .courses .icon-box .titulo-card p {
+
+  font-size: 12px;
+
+}
+.services .icon-box .titulo-card h4 a {
   color: #fff;
 }
 .services .icon-box p {
