@@ -56,8 +56,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   z-index: 997;
-  overflow-y: auto;
+  height: 130px;
+  /* overflow-y: auto; */
 }
 #header * {
   transition: ease-in-out 0.3s;
@@ -167,7 +169,6 @@ h1, h2, h3, h4, h5, h6 {
 */
 .navbar {
   padding: 0;
-  margin-top: 35px;
   justify-content: center;
 }
 .navbar ul {
@@ -213,14 +214,18 @@ border-radius: 5px;
   height: 2px;
   bottom: -4px;
   left: 0;
+  right: 0;
+  margin: 0 auto;
   background-color: #945B3E;
-  visibility: hidden;
-  width: 0px;
+  
+  /* visibility: hidden; */
+  /* width: 0px; */
   transition: all 0.3s ease-in-out 0s;
 }
 .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
   visibility: visible;
-  width: 25px;
+
+  width: calc(100% - 2em);
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   font-weight: bolder;
@@ -304,7 +309,7 @@ section {
   z-index: 2;
 }
 section.section-show {
-  top: 100px;
+  top: 130px;
   bottom: auto;
   opacity: 1;
   padding-bottom: 45px;
@@ -313,6 +318,10 @@ section .container {
   background: var(--blanco);
   padding: 30px;
   border-radius: 50px;
+  margin: 0 55px;
+}
+.section-title{
+  margin: 0 55px;
 }
 @media (max-width: 768px) {
   section {
@@ -321,31 +330,24 @@ section .container {
   section.section-show {
     top: 80px;
   }
+  section .container {
+    margin: 0 10px;
+    width: 95vw;
+  }
+  .section-title{
+    margin: 0 10px;
+  }
+  .row div{
+    justify-content: center;
+  }
 }
 
-/* .section-title h2 {
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0;
-  line-height: 1px;
-  margin: 0 0 20px 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #aaaaaa;
-}
-.section-title h2::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: #4ceb95;
-  margin: 4px 10px;
-} */
 .section-title p {
-  margin: 0 55px;
+
   font-size: 96px;
   color: var(--primario);
 }
+
 
 /*--------------------------------------------------------------
 # About
