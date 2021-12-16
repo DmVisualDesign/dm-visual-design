@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #header img {
   padding: 0;
-  margin: 0;
+  margin: 0 136px;
 }
 #header .social-links {
   margin-top: 40px;
@@ -148,6 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-top .container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 #header.header-top .navbar {
   margin: 0;
@@ -181,11 +182,11 @@ h1, h2, h3, h4, h5, h6 {
 .navbar li {
   position: relative;
 text-transform: uppercase;
-padding: 5px 10px;
+/* padding: 5px 10px; */
 border-radius: 5px;
 }
 .navbar li + li {
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 .navbar li a img{
   width: 101px;
@@ -195,8 +196,8 @@ border-radius: 5px;
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   font-weight: 400;
   color: #945B3E;
   white-space: nowrap;
@@ -222,15 +223,23 @@ border-radius: 5px;
   /* width: 0px; */
   transition: all 0.3s ease-in-out 0s;
 }
+.navbar .logo::before{
+  height: 0;
+}
+
 .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
   visibility: visible;
 
-  width: calc(100% - 2em);
+  width: calc(100% - 1.4em);
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   font-weight: bolder;
+  color: var(--primario);
 }
-
+.navbar ul .boton-li {
+  height: 50px;
+  width: 120px;
+}
 /**
 * Mobile Navigation 
 */
