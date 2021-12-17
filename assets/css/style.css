@@ -7,6 +7,7 @@
   --negro: #2E2E2E;
   --blanco: rgba(255, 255, 255, 0.6);
   --fondo: #EDDED6;
+  /* --fondo-card: rgba(246, 216, 200, 1); */
 }
 
 body {
@@ -214,13 +215,11 @@ border-radius: 5px;
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: 6px;
+  bottom: 15px;
   left: 0;
   right: 0;
   margin: 0 auto;
   background-color: #945B3E;
- 
-  
   /* visibility: hidden; */
   /* width: 0px; */
   transition: all 0.3s ease-in-out 0s;
@@ -232,7 +231,7 @@ border-radius: 5px;
 .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
   visibility: visible;
 
-  width: calc(100% - 5em);
+  width: calc(100% - 6em);
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   font-weight: bolder;
@@ -335,24 +334,7 @@ section .container {
 /* .section-title{ */
   /* margin-left: 8vw; */
 /* } */
-@media (max-width: 768px) {
-  section {
-    top: 120px;
-  }
-  section.section-show {
-    top: 80px;
-  }
-  section .container {
-    margin: 0 10px;
-    width: 95vw;
-  }
-  .section-title{
-    margin: 0 10px;
-  }
-  .row div{
-    justify-content: center;
-  }
-}
+
 
 .section-title p {
   font-size: 96px;
@@ -370,6 +352,22 @@ section .container {
   margin: 0 auto;
 }
 
+.modalidad{
+  position: relative;
+  top: -236px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  width: 120px;
+  height: 24px;
+  left: 160px;
+  border-radius: 30px;
+  background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    left: 160px;
+    padding-top: 5px;
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -642,12 +640,13 @@ border-radius: 30px;
   background-repeat: no-repeat;
   width: 296px;
   height: 335px;
-  margin-bottom: 20px;
   border-radius: 20px;
   transition: box-shadow .3s;
   border: none;
 }
-
+.complete-card{
+  margin-bottom: 42px;
+}
 .card:hover{
   box-shadow: 2px 2px 5px 2px #945B3E50;
 
@@ -676,35 +675,6 @@ height: 100%;
 border-radius: 20px;
 }
 
-.services .icon-box .icon {
-  margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: #18d26e;
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transform-style: preserve-3d;
-}
-.services .icon-box .icon i {
-  color: #fff;
-  font-size: 28px;
-}
-.services .icon-box .icon::before {
-  position: absolute;
-  content: "";
-  left: -8px;
-  top: -8px;
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
-}
 .services .icon-box .titulo-card, .courses .icon-box .titulo-card  {
   font-weight: 700;
   margin-top: 0px;
@@ -712,7 +682,7 @@ border-radius: 20px;
   text-indent: 20px;
   padding: 9px 0;
   height: 85px;
-  background-color: pink;
+  background-color: var(--fondo);
   border-radius: 0 0 15px 15px;
 }
 
@@ -1172,4 +1142,31 @@ border-radius: 20px;
 }
 .credits a:hover {
   color: #fff;
+}
+
+/* Medias Q */
+
+@media (max-width: 768px) {
+  .container{
+    max-width: fit-content;
+  }
+  section {
+    top: 120px;
+  }
+  section.section-show {
+    top: 80px;
+  }
+  section .container {
+    margin: 0 10px;
+    width: 95vw;
+  }
+  .section-title{
+    margin: 0 10px;
+  }
+  .section-title p{
+    font-size: 50px;
+  }
+  .row div{
+    justify-content: center;
+  }
 }
