@@ -53,6 +53,9 @@ a:hover {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+.swiper{
+  margin: 0 58px;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -327,7 +330,7 @@ section {
   top: 140px;
   bottom: 100%;
   opacity: 0;
-  transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.1s;
   z-index: 2;
 }
 section.section-show {
@@ -338,7 +341,7 @@ section.section-show {
 }
 section .container {
   background: var(--blanco);
-  padding: 30px;
+  padding: 49px 54px;
   border-radius: 50px;
   margin: 0 auto;
 }
@@ -378,6 +381,29 @@ section .container {
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     left: 160px;
     padding-top: 5px;
+}
+
+.stamps{
+  display: flex;
+  flex-direction: row;
+}
+
+.stamp-1, .stamp-2{
+  /* position: relative; */
+  color: #945B3E;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  margin-right: 9px;
+  width: fit-content;
+  height: 24px;
+text-align: center;
+  border-radius: 30px;
+  background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    left: 160px;
+    padding: 5px 15px 0;
 }
 /*--------------------------------------------------------------
 # About
@@ -637,7 +663,7 @@ border-radius: 30px;
 # Services
 --------------------------------------------------------------*/
 .swiper-slide img{
-  width: 500px;
+  width: 100%;
   height: 500px;
   object-fit: cover;
 }
@@ -736,7 +762,7 @@ border-radius: 20px;
   overflow-y: auto;
 }
 .services-details .container {
-  margin-top: 50px;
+  margin: 50px 0 0 0;
   padding-bottom: 40px;
 }
 .services-details .portfolio-title {
@@ -744,9 +770,9 @@ border-radius: 20px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.services-details .portfolio-info {
+/* .services-details .portfolio-info {
   padding-top: 45px;
-}
+} */
 .services-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 400;
@@ -1174,7 +1200,31 @@ border-radius: 20px;
   .section-title p{
     font-size: 50px;
   }
-  .row div{
+  /* .row div{
     justify-content: center;
+  } */
+}
+@media (min-width: 992px){
+.services-details .container {
+    max-width: 100%;
+}
+ .col-lg-8 {
+padding: 0;
+  width: 51.666667%;
+}
+.col-lg-4 {
+  width: 49%;
+  justify-content: center;
+}
+.services-details .container .row .col-lg-4 {
+padding: 0;
+margin: 0 26px;
+  width: 40%;
+}
+}
+
+@media (min-width: 1200px){
+  .col-lg-4 {
+    width: 33.33%;
   }
 }
