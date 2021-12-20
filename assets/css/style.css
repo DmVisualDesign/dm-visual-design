@@ -46,14 +46,18 @@ a:hover {
 }
 
 .gslide-media {
-  border-radius: 50px;
+  border-radius: 50px 50px 0 0;
+  /* border-radius: 50px; */
   border: solid 1px #f8f2ef;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
 .swiper {
   margin: 0 58px;
+  border-radius: 20px;
+
 }
 
 /*--------------------------------------------------------------
@@ -399,7 +403,6 @@ section .container {
 
 .stamp-1,
 .stamp-2 {
-  /* position: relative; */
   color: #945b3e;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -414,6 +417,38 @@ section .container {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   left: 160px;
   padding: 5px 15px 0;
+}
+.services-details .container .row .col-lg-4, .services-details .container .row-2 {
+  margin-left: 54px;
+ 
+}
+.comprar-button{
+  margin-top: 20px;
+  width: 333px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: var(--primario);
+  color: #FFFFFF ;
+  text-align: center;
+  padding-top: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.descargar{
+  margin-top: 20px;
+  width: 333px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: var(--primario);
+  color: #FFFFFF ;
+  text-align: center;
+  padding-top: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer; 
 }
 /*--------------------------------------------------------------
 # About
@@ -750,7 +785,7 @@ section .container {
   color: #fff;
 } */
 
-/* Vidriera Details */
+/* Services (and courses) Details */
 .gprev.gbtn.disabled,
 .gnext.gbtn.disabled {
   display: none;
@@ -785,6 +820,14 @@ font-weight: normal;
   line-height: 49px;
 }
 
+.row-2{
+  margin-top: 38px;
+  font-family: "Roboto", sans-serif;
+  color: #2E2E2E;
+  font-size: 14px;
+line-height: 16px;
+}
+
 .description {
   margin: 15px 0 0 0;
   font-size: 18px;
@@ -815,17 +858,19 @@ font-weight: normal;
   }
 }
 .services-details .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 33px;
   position: relative;
+  bottom: 0;
 }
 .services-details .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 19px;
+  height: 19px;
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #C4C4C4;
+  margin: 0 15px 0 0;
 }
 .services-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #C38F78;
 }
 
 /*--------------------------------------------------------------
@@ -1203,6 +1248,42 @@ font-weight: normal;
 }
 
 /* Medias Q */
+@media (max-width: 1103px) {
+
+  .services-details .container{
+    max-width: 100%;
+  }
+  .glightbox-clean .gnext{
+    right: 47px;
+    top: 48%;
+    width: 30px;
+  }
+  
+  .glightbox-clean .gprev  {
+    top: 48%;
+    left: 47px;
+    width: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .services-details .container {
+    max-width: 100%;
+  }
+  .col-lg-8 {
+    padding: 0;
+    width: 51.666667%;
+  }
+  .col-lg-4 {
+    width: 49%;
+    justify-content: center;
+  }
+  .services-details .container .row .col-lg-4 {
+    padding: 0;
+    margin: 0 26px;
+    width: 40%;
+  }
+}
 
 @media (max-width: 768px) {
   .container {
@@ -1224,28 +1305,24 @@ font-weight: normal;
   .section-title p {
     font-size: 50px;
   }
-  /* .row div{
-    justify-content: center;
-  } */
-}
-@media (min-width: 992px) {
-  .services-details .container {
-    max-width: 100%;
-  }
-  .col-lg-8 {
-    padding: 0;
-    width: 51.666667%;
-  }
-  .col-lg-4 {
-    width: 49%;
-    justify-content: center;
-  }
-  .services-details .container .row .col-lg-4 {
-    padding: 0;
-    margin: 0 26px;
-    width: 40%;
+  .gslide-external{
+    max-height: 90vh;
   }
 }
+
+@media (max-width: 565px) {
+  .glightbox-clean .gnext{
+    right: 10px;
+  }
+  
+  .glightbox-clean .gprev  {
+    left: 10px;
+  }
+  .services-details .container .row .col-lg-4, .services-details .container .row-2 {
+    margin-left: 14px;
+  }
+}
+
 
 @media (min-width: 1200px) {
   .col-lg-4 {
