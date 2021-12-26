@@ -6,7 +6,6 @@
   --negro: #2e2e2e;
   --blanco: rgba(255, 255, 255, 0.6);
   --fondo: #edded6;
-  /* --fondo-card: rgba(246, 216, 200, 1); */
 }
 
 body {
@@ -19,7 +18,6 @@ body {
 body::before {
   content: "";
   position: fixed;
-  /* background: #040404 url("../img/fondo-muestra.jpg") top right no-repeat; */
   background-color: var(--fondo);
   background-size: cover;
   left: 0;
@@ -47,7 +45,6 @@ a:hover {
 
 .gslide-media {
   border-radius: 50px 50px 0 0;
-  /* border-radius: 50px; */
   border: solid 1px #f8f2ef;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -71,7 +68,6 @@ a:hover {
   justify-content: center;
   z-index: 997;
   height: 130px;
-  /* overflow-y: auto; */
 }
 #header * {
   transition: ease-in-out 0.3s;
@@ -147,15 +143,6 @@ a:hover {
   }
 }
 
-/* Header Top */
-/* #header.header-top { */
-/* height: 80px; */
-/* position: fixed; */
-/* left: 0;
-  top: 0;
-  right: 0;
-  background: none; */
-/* } */
 #header.header-top .social-links,
 #header.header-top h2 {
   display: none;
@@ -1311,6 +1298,51 @@ line-height: 16px;
 }
 
 @media (max-width: 565px) {
+
+  .complete-section{
+    width: 100%;
+    margin: 0 16px;
+  }
+  .complete-section a {
+    width: 100%;
+  }
+  .row{
+    margin: 0;
+  }
+  .card{
+    width: auto;
+    min-width: 150px;
+    margin-bottom: 16px;
+    height: 270px;
+    position: relative;
+  }
+  .modalidad{
+    top: -170px;
+    left: 15px;
+  }
+  .services .icon-box, .courses .icon-box {
+    position: absolute;
+    padding-top: 0;
+    height: auto;
+    bottom: 0;
+    }
+  .section-show{
+    justify-content: center;
+    display: flex;
+  }
+  section .container {
+    padding: 16px 16px 0 16px;
+margin: 0;
+border-radius: 20px;
+}
+.complete-card{
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 0;
+}
+.mt-4{
+  margin-top: 0 !important;
+}
   .glightbox-clean .gnext{
     right: 10px;
   }
