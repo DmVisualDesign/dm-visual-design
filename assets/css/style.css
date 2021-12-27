@@ -54,9 +54,27 @@ a:hover {
 .swiper {
   margin: 0 58px;
   border-radius: 20px;
-
 }
 
+.glightbox-clean .gclose {
+  background: none;
+  width: 59px;
+  height: 59px;
+  top: 66px;
+  right: 110px;
+}
+.glightbox-clean .gclose svg {
+  width: 34px;
+}
+.glightbox-clean .gclose path, .glightbox-clean .gnext path, .glightbox-clean .gprev path {
+  fill: #C38F78;
+}
+.glightbox-clean .gnext {
+  right: 13px;
+}
+.glightbox-clean .gprev {
+  left: 10px;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -174,6 +192,10 @@ a:hover {
 /**
 * Desktop Navigation 
 */
+.inicio-li{
+  display: none;
+}
+
 .navbar {
   padding: 0;
   justify-content: center;
@@ -188,12 +210,9 @@ a:hover {
 .navbar li {
   position: relative;
   text-transform: uppercase;
-  /* padding: 5px 10px; */
   border-radius: 5px;
 }
-/* .navbar li + li { */
-/* margin-left: 30px; */
-/* } */
+
 .navbar li a {
   text-align: center;
 }
@@ -202,7 +221,6 @@ a:hover {
 }
 .navbar a,
 .navbar a:focus {
-  /* display: flex; */
   align-items: center;
   justify-content: space-between;
   padding: 0;
@@ -229,8 +247,6 @@ a:hover {
   right: 0;
   margin: 0 auto;
   background-color: #945b3e;
-  /* visibility: hidden; */
-  /* width: 0px; */
   transition: all 0.3s ease-in-out 0s;
 }
 .navbar .logo::before {
@@ -272,11 +288,18 @@ a:hover {
 }
 
 @media (max-width: 991px) {
+  .inicio-li{
+    display: block;
+  }
   .mobile-nav-toggle {
     display: block;
   }
 
   .navbar ul {
+    display: none;
+  }
+
+  .logo-li{
     display: none;
   }
 }
@@ -405,17 +428,17 @@ section .container {
   left: 160px;
   padding: 5px 15px 0;
 }
-.services-details .container .row .col-lg-4, .services-details .container .row-2 {
+.services-details .container .row .col-lg-4,
+.services-details .container .row-2 {
   margin-left: 54px;
- 
 }
-.comprar-button{
+.comprar-button {
   margin-top: 20px;
   width: 333px;
   height: 60px;
   border-radius: 30px;
   background-color: var(--primario);
-  color: #FFFFFF ;
+  color: #ffffff;
   text-align: center;
   padding-top: 16px;
   font-family: "Roboto", sans-serif;
@@ -423,19 +446,19 @@ section .container {
   text-transform: uppercase;
   cursor: pointer;
 }
-.descargar{
+.descargar {
   margin-top: 20px;
-  width: 333px;
-  height: 60px;
+  width: 295px;
+height: 27px;
   border-radius: 30px;
-  background-color: var(--primario);
-  color: #FFFFFF ;
+  background-color: #C38F78;
+  color: #ffffff;
   text-align: center;
-  padding-top: 16px;
+  padding-top: 7px;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
-  cursor: pointer; 
+  cursor: pointer;
 }
 /*--------------------------------------------------------------
 # About
@@ -790,6 +813,7 @@ section .container {
   top: 0;
   bottom: 0;
   overflow-y: auto;
+  background-color: #F8F2EF;
 }
 .services-details .container {
   margin: 50px 0 0 0;
@@ -799,7 +823,7 @@ section .container {
 .services-details .course-service-info h3 {
   font-size: 36px;
   font-style: normal;
-font-weight: normal;
+  font-weight: normal;
   margin: 34px 0 0 0;
   width: 310px;
   font-family: "Prata", serif;
@@ -807,12 +831,12 @@ font-weight: normal;
   line-height: 49px;
 }
 
-.row-2{
+.row-2 {
   margin-top: 38px;
   font-family: "Roboto", sans-serif;
-  color: #2E2E2E;
+  color: #2e2e2e;
   font-size: 14px;
-line-height: 16px;
+  line-height: 16px;
 }
 
 .description {
@@ -822,7 +846,7 @@ line-height: 16px;
   color: var(--primario);
   font-family: "Roboto", sans-serif;
 }
-.prices{
+.prices {
   display: flex;
   flex-direction: row;
   font-size: 30px;
@@ -831,12 +855,12 @@ line-height: 16px;
   font-weight: 700;
   line-height: 35px;
 }
-.new-price{
-  color: #2E2E2E;
+.new-price {
+  color: #2e2e2e;
   margin-right: 6px;
 }
-.old-price{
-  color: #C4C4C4;
+.old-price {
+  color: #c4c4c4;
   text-decoration: line-through;
 }
 @media (max-width: 992px) {
@@ -853,11 +877,11 @@ line-height: 16px;
   width: 19px;
   height: 19px;
   opacity: 1;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   margin: 0 15px 0 0;
 }
 .services-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #C38F78;
+  background-color: #c38f78;
 }
 
 /*--------------------------------------------------------------
@@ -1236,21 +1260,25 @@ line-height: 16px;
 
 /* Medias Q */
 @media (max-width: 1103px) {
-
-  .services-details .container{
+  .services-details .container {
     max-width: 100%;
   }
-  .glightbox-clean .gnext{
-    right: 47px;
+  .glightbox-clean .gnext {
+    right: 8px;
     top: 48%;
     width: 30px;
   }
-  
-  .glightbox-clean .gprev  {
+
+  .glightbox-clean .gprev {
     top: 48%;
-    left: 47px;
+    left: 7px;
     width: 30px;
   }
+  .glightbox-clean .gclose {
+
+    top: 35px;
+    right: 50px;
+}
 }
 
 @media (min-width: 992px) {
@@ -1292,69 +1320,109 @@ line-height: 16px;
   .section-title p {
     font-size: 50px;
   }
-  .gslide-external{
+  .gslide-external {
     max-height: 90vh;
   }
 }
 
 @media (max-width: 565px) {
-
-  .complete-section{
+  .complete-section {
     width: 100%;
     margin: 0 16px;
   }
   .complete-section a {
     width: 100%;
   }
-  .row{
+  .row {
     margin: 0;
   }
-  .card{
+  .card {
     width: auto;
     min-width: 150px;
     margin-bottom: 16px;
     height: 270px;
     position: relative;
   }
-  .modalidad{
+  .modalidad {
     top: -170px;
     left: 15px;
   }
-  .services .icon-box, .courses .icon-box {
+  .services .icon-box,
+  .courses .icon-box {
     position: absolute;
     padding-top: 0;
     height: auto;
     bottom: 0;
-    }
-  .section-show{
+  }
+  .section-show {
     justify-content: center;
     display: flex;
   }
   section .container {
     padding: 16px 16px 0 16px;
-margin: 0;
-border-radius: 20px;
-}
-.complete-card{
-  justify-content: center;
-  padding: 0;
-  margin-bottom: 0;
-}
-.mt-4{
-  margin-top: 0 !important;
-}
-  .glightbox-clean .gnext{
-    right: 10px;
+    margin: 0;
+    border-radius: 20px;
   }
-  
-  .glightbox-clean .gprev  {
-    left: 10px;
+  .complete-card {
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0;
   }
-  .services-details .container .row .col-lg-4, .services-details .container .row-2 {
-    margin-left: 14px;
+  .mt-4 {
+    margin-top: 0 !important;
   }
-}
+  .glightbox-clean .gnext {
+    right: -2px;
+    background: none;
+  }
 
+  .glightbox-clean .gprev {
+    left: -2px;
+    background: none;
+  }
+  .swiper {
+    margin: 0;
+  }
+  .services-details .container {
+    padding: 0 16px;
+    margin-top: 16px;
+  }
+  .services-details .container .row {
+    margin: 0;
+    padding: 0;
+  }
+  .services-details .container .row .col-lg-8 {
+    padding: 0;
+  }
+  .services-details .container .row .col-lg-4,
+  .services-details .container .row-2 {
+    margin-left: 0px;
+    padding-left: 0;
+  }
+  .services-details .course-service-info h3{
+    font-size: 24px;
+    line-height: 33px;
+margin: 16px 0 0 0;
+
+  }
+  .description{
+    width: auto;
+    margin: 16px 0 0 0;
+  }
+  .prices{
+font-size: 18px;
+line-height: 21px;
+margin: 16px 0 0 0;
+  }
+  .comprar-button{
+    margin-top: 16px;
+    width: 234px;
+height: 42px;
+font-size: 12px;
+font-weight: 700;
+padding-top: 13px;
+  }
+}
 
 @media (min-width: 1200px) {
   .col-lg-4 {
