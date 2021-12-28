@@ -287,22 +287,7 @@ a:hover {
   top: 15px;
 }
 
-@media (max-width: 991px) {
-  .inicio-li{
-    display: block;
-  }
-  .mobile-nav-toggle {
-    display: block;
-  }
 
-  .navbar ul {
-    display: none;
-  }
-
-  .logo-li{
-    display: none;
-  }
-}
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -343,7 +328,11 @@ a:hover {
   font-size: 16px;
   position: relative;
 }
-
+#logo-li-responsive img{
+  width: 83px;
+  margin: 0;
+  display: none;
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -1299,7 +1288,53 @@ height: 27px;
     width: 40%;
   }
 }
+@media (max-width: 991px) {
+  .inicio-li{
+    display: block;
+  }
+  .mobile-nav-toggle {
+    display: block;
+  }
 
+  .navbar ul {
+    display: none;
+  }
+
+  .logo-li{
+    display: none;
+  }
+  .navbar ul .boton-li {
+    width: fit-content;
+}
+.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+  width: calc(100% - 1em);
+  bottom: 13px;
+}
+  .navbar-mobile {
+    width: 85%;
+    background: rgba(237, 222, 214, 0.8);
+  }
+  .navbar-mobile ul {
+    display: block;
+    overflow-y:hidden;
+    border: none;
+    top: 0;
+    left: 16px;
+    right: 0;
+  }
+  .navbar-mobile ul li {
+padding: 12px 0;
+      }
+  .navbar-mobile ul li a {
+text-align: start;
+  }
+  .navbar-mobile .mobile-nav-toggle {
+    color: var(--primario);
+}
+#logo-li-responsive img{
+display: block;
+}
+}
 @media (max-width: 768px) {
   .container {
     max-width: fit-content;
@@ -1326,6 +1361,9 @@ height: 27px;
 }
 
 @media (max-width: 565px) {
+  .section-title p {
+    font-size: 36px;
+}
   .complete-section {
     width: 100%;
     margin: 0 16px;
