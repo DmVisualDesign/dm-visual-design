@@ -47,16 +47,22 @@
   /**
    * Mobile nav toggle
    */
+
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
+    select('#logo-responsive').classList.toggle('logo-responsive-show')
+    select('#logo-responsive').classList.toggle('logo-responsive-hide')
   })
 
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
   on('click', '#navbar .nav-link', function(e) {
+    select('#logo-responsive').classList.toggle('logo-responsive-show')
+    select('#logo-responsive').classList.toggle('logo-responsive-hide')
+
     let section = select(this.hash)
     if (section) {
       e.preventDefault()

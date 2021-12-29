@@ -333,6 +333,28 @@ a:hover {
   margin: 0;
   display: none;
 }
+
+.logo-responsive-show{
+
+  display: none;
+}
+.logo-responsive-hide{
+
+  display: none;
+}
+#logo-responsive img{
+  width: 39px;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+
+}
+.mobile-nav-toggle {
+  color: rgba(0, 0, 0, 0.65);
+  right: 16px;
+  top: 18px;
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -1334,6 +1356,9 @@ text-align: start;
 #logo-li-responsive img{
 display: block;
 }
+.logo-responsive-show {
+  display: block;
+  }
 }
 @media (max-width: 768px) {
   .container {
