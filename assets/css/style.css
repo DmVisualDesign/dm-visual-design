@@ -160,10 +160,10 @@ a:hover {
   }
 }
 
-#header.header-top .social-links,
+/* #header.header-top .social-links,
 #header.header-top h2 {
   display: none;
-}
+} */
 #header.header-top h1 {
   margin-right: auto;
   font-size: 36px;
