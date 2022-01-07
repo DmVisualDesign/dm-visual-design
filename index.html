@@ -408,7 +408,7 @@
 
       <div class="container">
         <div class="row mt-2">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+          <form class="php-email-form mt-4">
             <label for="nombre">Nombre</label>
             <input type="text" name="name" id="name">
             <label for="email">E-mail</label>
@@ -419,11 +419,11 @@
             <label for="consulta" class="texto-checkbox"><input type="checkbox" name="consulta" id="consulta" class="ordenar-items"> Quiero realizar otra consulta</label>
             <label for="mensaje">Mensaje</label>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <div class="my-3">
+            <!-- <div class="my-3">
               <div class="loading">Loading</div>
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
+            </div> -->
             <div class="boton-formulario">
               <button type="submit">ENVIAR FORMULARIO</button>
             </div>
@@ -455,6 +455,9 @@
       </div>
     </div>
   </section>
+  <?php
+  include("correo.php");
+  ?>
   <!-- </section> -->
   <!-- End Contact Section -->
 
@@ -465,7 +468,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
