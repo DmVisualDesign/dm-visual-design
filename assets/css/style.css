@@ -872,16 +872,48 @@ height: 27px;
   box-shadow: 2px 2px 5px 2px #945b3e50;
 }
 .vidrieras {
-  background-image: url("../img/servicios/vidrieras.jpeg");
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
 }
 .visual-merch {
-  background-image: url("../img/servicios/visual-merch.jpeg");
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
 }
+.asesoria-hora{
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
+}
+.asesoria-integral{
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
+}
+.diseño-tienda{
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
+}
+
 .tienda-exito {
   background-image: url("../img/cursos/tienda-exito.png");
 }
 .vidrieras-qVenden {
-  background-image: url("../img/cursos/vidrieras-venden.jpeg");
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
+}
+.showroom-sueños{
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
+}
+.exhibiciones{
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
 }
 
 .services .icon-box {
