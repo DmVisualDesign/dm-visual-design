@@ -794,7 +794,7 @@ height: 27px;
 
 .courses .icon-box {
   text-align: center;
-  background: rgba(204, 204, 204, 0.1);
+  background: rgba(151, 151, 151, 0.4);
   padding-top: 38%;
   transition: all ease-in-out 0.3s;
   width: 100%;
@@ -893,7 +893,9 @@ height: 27px;
   height: 100%;
   border-radius: 20px;
 }
-
+.services .icon-box:hover {
+  background: none;
+}
 .services .icon-box .titulo-card,
 .courses .icon-box .titulo-card {
   font-weight: 700;
