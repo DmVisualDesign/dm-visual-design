@@ -371,9 +371,14 @@ section.section-show {
   top: 130px;
   bottom: auto;
   opacity: 1;
+<<<<<<< HEAD
   /* padding-bottom: 45px; */
   /* opacity: 0;
   top: 200px; */
+=======
+  padding-bottom: 45px;
+
+>>>>>>> f2baf66dbda62be8e9e540b06d4bc2cf81346072
 }
 section .container {
   background: var(--blanco);
@@ -381,9 +386,6 @@ section .container {
   border-radius: 50px;
   margin: 0 auto;
 }
-/* .section-title{ */
-/* margin-left: 8vw; */
-/* } */
 
 .section-title p {
   font-size: 96px;
@@ -793,18 +795,18 @@ height: 27px;
 }
 
 /*--------------------------------------------------------------
-# Resume
+# Courses
 --------------------------------------------------------------*/
 
 .courses .icon-box {
   text-align: center;
-  background: rgba(204, 204, 204, 0.1);
+  background: rgba(151, 151, 151, 0.4);
   padding-top: 38%;
   transition: all ease-in-out 0.3s;
   width: 100%;
   height: 100%;
   padding-top: 85%;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .courses .icon-box .icon {
@@ -876,16 +878,48 @@ height: 27px;
   box-shadow: 2px 2px 5px 2px #945b3e50;
 }
 .vidrieras {
-  background-image: url("../img/servicios/vidrieras.jpeg");
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
 }
 .visual-merch {
-  background-image: url("../img/servicios/visual-merch.jpeg");
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
 }
+.asesoria-hora{
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
+}
+.asesoria-integral{
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
+}
+.diseño-tienda{
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
+}
+
 .tienda-exito {
   background-image: url("../img/cursos/tienda-exito.png");
 }
 .vidrieras-qVenden {
-  background-image: url("../img/cursos/vidrieras-venden.jpeg");
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
+}
+.showroom-sueños{
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
+}
+.exhibiciones{
+  background-image: url("../img/proximamente.jpg");
+  background-size: contain;
+    background-position-y: -7%;
 }
 
 .services .icon-box {
@@ -897,7 +931,9 @@ height: 27px;
   height: 100%;
   border-radius: 20px;
 }
-
+.services .icon-box:hover {
+  background: none;
+}
 .services .icon-box .titulo-card,
 .courses .icon-box .titulo-card {
   font-weight: 700;
@@ -908,6 +944,10 @@ height: 27px;
   height: 85px;
   background-color: var(--fondo);
   border-radius: 0 0 15px 15px;
+}
+.services .icon-box .titulo-card{
+  margin-top: -2px;
+
 }
 
 .services .icon-box .titulo-card h4,
@@ -1015,206 +1055,6 @@ height: 27px;
   background-color: #c38f78;
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 15px auto;
-  list-style: none;
-  text-align: center;
-  border-radius: 50px;
-  padding: 2px 15px;
-}
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 16px 10px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1);
-  margin: 0 3px 10px 3px;
-  transition: all 0.3s ease-in-out;
-  border-radius: 4px;
-}
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
-}
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.6);
-}
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-.portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.portfolio .portfolio-wrap .portfolio-info::before {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  border-top: 3px solid #fff;
-  border-left: 3px solid #fff;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-.portfolio .portfolio-wrap .portfolio-info::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid #fff;
-  border-right: 3px solid #fff;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 600;
-}
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: #ffffff;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-}
-.portfolio .portfolio-wrap .portfolio-links {
-  text-align: center;
-  z-index: 4;
-}
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  margin: 0 2px;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #63eda3;
-}
-.portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
-}
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
-  top: 15px;
-  left: 15px;
-}
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
-  bottom: 15px;
-  right: 15px;
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-  background: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  overflow-y: auto;
-}
-.portfolio-details .container {
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-.portfolio-details .portfolio-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.portfolio-details .portfolio-info {
-  padding-top: 45px;
-}
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-.portfolio-details .portfolio-info p {
-  font-size: 15px;
-  padding: 15px 0 0 0;
-}
-@media (max-width: 992px) {
-  .portfolio-details .portfolio-info {
-    padding-top: 20px;
-  }
-}
-.portfolio-details .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-.portfolio-details .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  opacity: 1;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
-}
 
 /*--------------------------------------------------------------
 # Contact
@@ -1360,6 +1200,8 @@ label{
 }
 
 /* Medias Q */
+
+
 @media (max-width: 1103px) {
   .services-details .container {
     max-width: 100%;
