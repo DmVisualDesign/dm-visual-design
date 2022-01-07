@@ -371,14 +371,9 @@ section.section-show {
   top: 130px;
   bottom: auto;
   opacity: 1;
-<<<<<<< HEAD
-  /* padding-bottom: 45px; */
+  padding-bottom: 45px;
   /* opacity: 0;
   top: 200px; */
-=======
-  padding-bottom: 45px;
-
->>>>>>> f2baf66dbda62be8e9e540b06d4bc2cf81346072
 }
 section .container {
   background: var(--blanco);
@@ -507,19 +502,19 @@ height: 27px;
   color: rgba(148, 91, 62, 1);
   margin: 37px 0;
 }
-.about-me .content button {
+.about-me .content #navbar ul li a {
   width: 333px;
-  height: 60px;
+  padding: 14px;
   border-radius: 30px;
   background: rgba(201, 177, 165, 1);
   border: none;
-
   font-family: 'Roboto';
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
   color: #2E2E2E;
+  text-align: center;
 }
 .about-me .content ul {
   list-style: none;
@@ -667,11 +662,14 @@ height: 27px;
 .sobre-mi .derecha .parrafo-mobile {
   display: none;
 }
-.sobre-mi button {
+.sobre-mi #navbar ul li {
+  list-style: none;
+}
+.sobre-mi #navbar ul li a {
   background: rgba(201, 177, 165, 1);
   border-radius: 30px;
   width: 333px;
-  height: 60px;
+  padding: 10px;
   font-family: 'Prata';
   font-style: normal;
   font-weight: normal;
@@ -681,10 +679,13 @@ height: 27px;
   margin: auto;
   border: none;
   color: #2E2E2E;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3%;
 }
 .mis-servicios {
   background: rgba(237, 222, 214, 1);
-  margin: 5% 0;
+  margin: 3% 0;
 }
 .mis-servicios h2 {
   font-family: Prata;
@@ -707,11 +708,14 @@ height: 27px;
 .mis-servicios .imagen-servicios .img-mobile {
   display: none;
 }
-.mis-servicios button {
+.mis-servicios #navbar ul li {
+  list-style: none;
+}
+.mis-servicios #navbar ul li a {
   background: rgba(201, 177, 165, 1);
   border-radius: 30px;
   width: 333px;
-  height: 60px;
+  padding: 10px;
   font-family: 'Prata';
   font-style: normal;
   font-weight: normal;
@@ -721,6 +725,7 @@ height: 27px;
   margin: auto;
   color: #2E2E2E;
   border: none;
+  text-align: center;
 }
 .cursos-online {
   background: rgba(201, 177, 165, 1);
@@ -761,7 +766,10 @@ height: 27px;
   height: 157px;
   margin: 5% 0;
 }
-.cursos-online .izquierda button {
+.cursos-online .izquierda #navbar ul li {
+  list-style: none;
+}
+.cursos-online .izquierda #navbar ul li a {
   background: #F6D8C8;
   border-radius: 30px;
   border: none;
@@ -775,6 +783,8 @@ height: 27px;
   display: block;
   margin: auto;
   color: #2E2E2E;
+  text-align: center;
+  padding: 4%;
 }
 .cursos-online .derecha {
   display: flex;
@@ -791,7 +801,7 @@ height: 27px;
 }
 .dibujo {
   position: absolute;
-  top: 1614px;
+  top: 1548px;
 }
 
 /*--------------------------------------------------------------
@@ -1406,7 +1416,10 @@ display: block;
     align-items: center;
     color: #2E2E2E;
   }
-  .sobre-mi .derecha button {
+  /* .sobre-mi .derecha button {
+    display: none;
+  } */
+  .sobre-mi #navbar ul li a {
     display: none;
   }
   .mis-servicios .imagen-servicios {
@@ -1419,7 +1432,7 @@ display: block;
     display: block;
     width: 100%;
   }
-  .mis-servicios button {
+  .mis-servicios #navbar ul li a {
     margin-top: 32px;
   }
   .dibujo {
@@ -1455,7 +1468,7 @@ display: block;
   .cursos-online .izquierda .parrafo-curso {
     display: none;
   }
-  .cursos-online .izquierda button {
+  .cursos-online .izquierda #navbar ul li a {
     display: none;
   }
   .cursos-online .derecha .img-desktop {
@@ -1479,7 +1492,7 @@ display: block;
     line-height: 25px;
     margin: 20px 0;
   }
-  .about-me .content button {
+  .about-me .content #navbar ul li a {
     margin-bottom: 17px;
     font-size: 22px;
     line-height: 16px;
@@ -1682,7 +1695,10 @@ display: block;
     align-items: center;
     color: #2E2E2E;
   }
-  .sobre-mi .derecha button {
+  /* .sobre-mi .derecha button {
+    display: none;
+  } */
+  .sobre-mi #navbar ul li a {
     display: none;
   }
   .mis-servicios {
@@ -1708,7 +1724,7 @@ display: block;
     display: block;
     width: 100%;
   }
-  .mis-servicios button {
+  .mis-servicios #navbar ul li a {
     margin-top: 32px;
     font-family: 'Prata';
     font-style: normal;
@@ -1716,6 +1732,7 @@ display: block;
     font-size: 17px;
     line-height: 19px;
     color: #2E2E2E;
+    width: 250px;
   }
   .dibujo {
     display: none;
@@ -1751,7 +1768,7 @@ display: block;
   .cursos-online .izquierda .parrafo-curso {
     display: none;
   }
-  .cursos-online .izquierda button {
+  .cursos-online .izquierda #navbar ul li a {
     display: none;
   }
   .cursos-online .derecha .img-desktop {
