@@ -371,7 +371,7 @@ section.section-show {
   top: 130px;
   bottom: auto;
   opacity: 1;
-  padding-bottom: 45px;
+  /* padding-bottom: 45px; */
   /* opacity: 0;
   top: 200px; */
 }
@@ -1458,7 +1458,8 @@ display: block;
     top: 120px;
   }
   section.section-show {
-    top: 80px;
+    top: 15px;
+    display: block;
   }
   section .container {
     margin: 0 10px;
@@ -1511,8 +1512,6 @@ display: block;
   }
   .sobre-mi {
     display: block;
-    height: 350px;
-    background-color: #C38F78;
   }
   .sobre-mi .izquierda {
     display: block;
@@ -1538,8 +1537,7 @@ display: block;
   .sobre-mi .derecha .parrafo-mobile {
     display: block;
     position: absolute;
-    width: 344px;
-    height: 75px;
+    width: 100%;
     left: 251px;
     top: 781px;
     background: #F8F2EF;
@@ -1580,18 +1578,16 @@ display: block;
     width: 100%;
   }
   .mis-servicios button {
-    margin-top: 5%;
+    margin-top: 32px;
   }
   .dibujo {
-    top: 1488px;
-    position: absolute;
-    left: -163px;
+    display: none;
   }
   .cursos-online {
     display: block;
   }
   .cursos-online .izquierda {
-    margin-top: 0%;
+    margin: 0%;
   }
   .cursos-online .izquierda .titulo-curso h2 {
     display: none;
@@ -1646,10 +1642,11 @@ display: block;
     font-size: 22px;
     line-height: 16px;
     font-weight: bold;
+    width: 80%;
   }
-  .contact .php-email-form input, .contact .php-email-form textarea {
+  /* .contact .php-email-form input, .contact .php-email-form textarea {
     width: 100%;
-  }
+  } */
 }
 
 @media (max-width: 565px) {
@@ -1751,60 +1748,177 @@ display: block;
     font-weight: 700;
     padding-top: 13px;
   }
-
-  .titulo .derecha .img-mobile {
+  .titulo {
     display: block;
+    height: 310px;
+  }
+  .titulo .izquierda {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .titulo .izquierda .parrafo-titulo {
+    display: none;
+  }
+  .titulo .izquierda .img-mobile {
+    display: block;
+    width: 100%;
   }
   .titulo .derecha .img-desktop {
     display: none;
   }
-  .titulo .sobre-mi .izquierda .img-mobile {
-    display: block;
-  }
-  .titulo .sobre-mi .izquierda .img-desktop {
-    display: none;
-  }
-  .titulo .sobre-mi .derecha .parrafo-sobre-mi {
-    display: none;
-  }
-  .titulo .sobre-mi .derecha button {
-    display: none;
-  }
-  .titulo .mis-servicios .imagen-servicios {
-    display: none;
-  }
-  .titulo .cursos-online .izquierda {
-    display: none;
-  }
-  .titulo .cursos-online .derecha {
-    display: none;
-  }
-  .about-me .row .img-mobile {
-    display: block;
-  }
-  .about-me .row .img-desktop {
-    display: none;
-  }
-  .about-me .content h3 {
+  .titulo .derecha .img-mobile {
+    position: absolute;
+    width: 276px;
+    height: 128px;
+    top: 305px;
+    background: #F8F2EF;
+    border-radius: 100px 0px 0px 100px;
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: normal;
     font-size: 24px;
     line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #945B3E;
+    padding: 5%;
   }
-  .about-me .content .subtitulo {
+  .sobre-mi {
+    display: block;
+    height: 230px;
+    background-color: #C38F78;
+  }
+  .sobre-mi .izquierda {
+    display: block;
+    width: 100%;
+  }
+  .sobre-mi .izquierda .img-mobile {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  .sobre-mi .izquierda .img-desktop {
+    display: none;
+  }
+  .sobre-mi .derecha {
+    margin: 0;
+  }
+  .sobre-mi .derecha .titulo-sobre-mi {
+    display: none;
+  }
+  .sobre-mi .derecha .parrafo-sobre-mi {
+    display: none;
+  }
+  .sobre-mi .derecha .parrafo-mobile {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 56px;
+    top: 598px;
+    background: #F8F2EF;
+    border-radius: 100px 0px 0px 100px;
+    padding: 1% 5%;
+  }
+  .sobre-mi .derecha .parrafo-mobile h2 {
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    color: #2E2E2E;
+  }
+  .sobre-mi .derecha .parrafo-mobile p {
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: normal;
     font-size: 14px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    color: #2E2E2E;
+  }
+  .sobre-mi .derecha button {
+    display: none;
+  }
+  .mis-servicios {
+    padding: 2% 0;
+    margin: auto;
+  }
+  .mis-servicios h2 {
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #2E2E2E;
+    margin: 5%;
+  }
+  .mis-servicios .imagen-servicios {
+    margin: 0 2%;
+  }
+  .mis-servicios .imagen-servicios .img-desktop {
+    display: none;
+  }
+  .mis-servicios .imagen-servicios .img-mobile {
+    display: block;
+    width: 100%;
+  }
+  .mis-servicios button {
+    margin-top: 32px;
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
     line-height: 19px;
+    color: #2E2E2E;
   }
-  .about-me .content p {
-    font-size: 14px;
-    line-height: 16px;
-    margin: 20px 0;
+  .dibujo {
+    display: none;
   }
-  .about-me .content button {
-    width: 200px;
-    height: 36px;
-    margin-bottom: 17px;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: bold;
+  .cursos-online {
+    display: block;
+  }
+  .cursos-online .izquierda {
+    margin-top: 0%;
+    margin-bottom: 32px;
+  }
+  .cursos-online .izquierda .titulo-curso h2 {
+    display: none;
+  }
+  .cursos-online .izquierda .titulo-curso .parrafo-mobile {
+    display: flex;
+    position: absolute;
+    left: 0%;
+    right: 45.28%;
+    top: 92%;
+    background: #EDDED6;
+    border-radius: 0px 30px 30px 0px;
+    width: 227px;
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: center;
+    color: #2E2E2E;
+    padding: 1% 4%;
+  }
+  .cursos-online .izquierda .parrafo-curso {
+    display: none;
+  }
+  .cursos-online .izquierda button {
+    display: none;
+  }
+  .cursos-online .derecha .img-desktop {
+    display: none;
+  }
+  .cursos-online .derecha .img-mobile {
+    display: block;
+    width: 100%;
+    margin: 0;
   }
   label {
     font-size: 14px;
@@ -1844,21 +1958,25 @@ display: block;
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-footer {
+.footer {
   display: flex;
   justify-content: space-between;
   background: #945B3E;
   padding-top: 46px;
   padding-bottom: 35px;
   padding-left: 200px;
-  margin-top: 2285px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5% 3%;
 }
-footer .izquierda img {
+.footer .izquierda img {
   height: 95px;
   width: 95px;
   margin-bottom: 30px;
 }
-footer .izquierda .nombre-contacto {
+.footer .izquierda .nombre-contacto {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
@@ -1867,7 +1985,7 @@ footer .izquierda .nombre-contacto {
   color: #FFFFFF;
   margin-bottom: 4%;
 }
-footer .izquierda p {
+.footer .izquierda p {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
@@ -1876,7 +1994,7 @@ footer .izquierda p {
   color: #FFFFFF;
   margin: 0%;
 }
-footer .centro p {
+.footer .centro p {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
@@ -1885,17 +2003,20 @@ footer .centro p {
   color: #FFFFFF;
   margin: 0%;
 }
-footer .derecha .ordenar-iconos {
+.footer .derecha {
+  width: 33%;
+}
+.footer .derecha .ordenar-iconos {
   display: flex;
   align-items: center;
 }
-footer .derecha .ordenar-iconos img {
+.footer .derecha .ordenar-iconos img {
   margin-right: 3%;
   margin-left: 3%;
   height: 19px;
   width: 19px;
 }
-footer .derecha .redes {
+.footer .derecha .redes {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: bold;
@@ -1904,7 +2025,7 @@ footer .derecha .redes {
   color: #FFFFFF;
   margin: 0%;
 }
-footer .derecha p {
+.footer .derecha p {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
@@ -1913,7 +2034,7 @@ footer .derecha p {
   color: #FFFFFF;
   margin: 0%;
 }
-footer .derecha .copyright {
+.footer .derecha .copyright {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
@@ -1924,3 +2045,23 @@ footer .derecha .copyright {
   margin-top: 40px;
   margin-right: 199px;
 }
+
+
+/* .footer {
+  display: flex;
+  background: #945B3E;
+  padding: 5% 3%;
+}
+.footer .izquierda {
+  width: 50%;
+}
+.footer .centro {
+  width: 50%;
+}
+.footer .centro p {
+  text-align: end;
+}
+.footer .derecha {
+  width: 100%;
+  display: block;
+} */
