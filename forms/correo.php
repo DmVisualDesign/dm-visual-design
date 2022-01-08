@@ -20,6 +20,6 @@ $msg =
 
 mail($destinatario,$subject,$msg,$header);
 echo "<h4>¡Mail enviado exitosamente!</h2>";
-echo "<script> setTimeout(\"location.href='index.html'\",1000) </script>";
+echo "<script> setTimeout(\"location.href='../index.html'\",1000) </script>";
 
 ?>
